@@ -1,0 +1,105 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+header input#search-bar {
+    margin-top: 10px;
+    width: 80%;
+    padding: 8px;
+}
+
+.container {
+    display: flex;
+    flex: 1;
+}
+
+.sidebar {
+    width: 250px;
+    background-color: #f4f4f4;
+    padding: 10px;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+}
+
+.sidebar h2 {
+    margin-top: 0;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin: 10px 0;
+}
+
+.main-content {
+    flex: 1;
+    padding: 20px;
+}
+
+.now-playing {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.now-playing img {
+    width: 100px;
+    height: 100px;
+    margin-right: 20px;
+}
+
+.now-playing-info {
+    flex: 1;
+}
+
+.controls {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.controls button {
+    margin: 0 10px;
+}
+
+#volume-control {
+    width: 100px;
+    margin: 0 10px;
+}
+
+#progress-bar {
+    flex: 1;
+    margin: 0 10px;
+}
+
+.playlist, .search-results {
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Music Player</h1>
+        <input type="text" id="search-bar" placeholder="Search...">
+    </header>
+
+    <div class="container">
+        <aside class="sidebar">
+            <div class="playlists">
+                <h2>Playlists</h2>
+                <ul id="playlist-list">
+                    <!-- Playlists will be dynamically added here -->
+                </ul>
+            </div>
+            <div class="categories">
+                <h2>Categories</h2>
+                <ul id="category-list">
+                    <!-- Categories will be dynamically added here -->
+                </ul>
+            </div>
+        </aside>
+
+        <main class="main-content">
+            <div class="now-playing">
+                <img id="album-art" src="" alt="Album Art">
+                <div class="now-playing-info">
+                    <h2 id="song-title">Title</h2>
+                    <p id="song-artist">Artist</p>
+                </div>
+                <div class="controls">
+                    <button id="prev-btn">Prev</button>
+                    <button id="play-pause-btn">Play</button>
+                    <button id="next-btn">Next</button>
+                    <input type="range" id="volume-control" min="0" max="1" step="0.1" value="1">
+                    <input type="range" id="progress-bar" min="0" value="0">
+                </div>
+                <p id="time-info">0:00 / 0:00</p>
+            </div>
+
+            <div class="playlist">
+                <h2>Current Playlist</h2>
+                <ul id="track-list">
+                    <!-- Tracks will be dynamically added here -->
+                </ul>
+            </div>
+
+            <div class="search-results">
+                <h2>Search Results</h2>
+                <ul id="search-results-list">
+                    <!-- Search results will be dynamically added here -->
+                </ul>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
